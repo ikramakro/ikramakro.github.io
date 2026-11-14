@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hometown Pizza PDX — Southeast Portland</title>
+  <meta name="description" content="Demo concept site for Hometown Pizza PDX on SE 72nd Avenue in Portland. Not an official site.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="logo" href="#top">Hometown Pizza PDX<span>Southeast Portland</span></a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <nav id="nav-links" class="nav-links">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#hours">Hours</a>
+        <a href="#reviews">Reviews</a>
+        <a class="btn" href="tel:+15037711983">Call (503) 771-1983</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="wrap hero-inner">
+      <p class="kicker">5902 SE 72nd Avenue</p>
+      <h1>Neighborhood pizza, without the delivery-app maze.</h1>
+      <p>A family-run pizzeria in Southeast Portland. Hours, the address, and how to call for a pie — in one simple page, instead of hunting through Instagram or an app.</p>
+      <div class="hero-actions">
+        <a class="btn" href="tel:+15037711983">Call (503) 771-1983</a>
+          <a class="btn ghost" href="#hours">Hours &amp; directions</a>
+      </div>
+      <div class="pills">
+        <span class="pill">About 4.5 from 100 ratings (Restaurantji, updated 14 Nov 2026)</span>
+        <span class="pill">Yelp listing: 70 reviews (updated Oct 2026)</span>
+        <span class="pill">Closed Sunday &amp; Monday</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap grid-2">
+      <div>
+        <p class="eyebrow">SE 72nd Avenue</p>
+        <div class="section-head">
+          <h2>A local pie shop that still lives on Instagram.</h2>
+          <p>Hometown Pizza PDX is a takeaway-friendly pizzeria at 5902 SE 72nd Avenue. Public listings point to Instagram and Facebook as the official presence — there isn’t a site of their own for the menu, the closed days, or a direct call. This demo is one possible version of that page.</p>
+        </div>
+      </div>
+      <div class="photo">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1400&q=80" alt="A baked pizza on a wooden board, used as decorative atmosphere photography" width="900" height="700">
+      </div>
+    </div>
+  </section>
+
+  <section id="menu">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">From public listings</p>
+        <h2>Pizzas, wings, and breadsticks.</h2>
+        <p>Directories list specialty pizzas, wings, and breadsticks. Named pies and prices vary across those listings, so they are not shown as a current price list here. Call or check Instagram for what’s available tonight.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><p class="eyebrow" style="margin:0 0 .25rem">Pies</p><h3>Specialty pizzas</h3><p>Public menus have mentioned cheese, pepperoni, Hawaiian, veggie, BBQ chicken, and house specials.</p></article>
+        <article class="card"><p class="eyebrow" style="margin:0 0 .25rem">Sides</p><h3>Wings &amp; breadsticks</h3><p>Wings and breadsticks (plain or loaded) appear on public menu listings.</p></article>
+        <article class="card"><p class="eyebrow" style="margin:0 0 .25rem">Visit</p><h3>Evenings, five days a week</h3><p>Most listings show the shop closed Sunday and Monday, and open from 4pm the rest of the week.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="hours">
+    <div class="wrap hours-grid">
+      <div class="panel">
+        <p class="eyebrow">Visit</p>
+        <h2 style="font-family:var(--display),serif;font-size:2rem;font-weight:500;margin:.2rem 0 1rem">Hours &amp; address</h2>
+        <div class="hours-row shut" data-day="1"><span>Monday</span><span>Closed</span></div>
+        <div class="hours-row" data-day="2"><span>Tuesday</span><span>4:00 PM – 9:00 PM</span></div>
+        <div class="hours-row" data-day="3"><span>Wednesday</span><span>4:00 PM – 9:00 PM</span></div>
+        <div class="hours-row" data-day="4"><span>Thursday</span><span>4:00 PM – 9:00 PM</span></div>
+        <div class="hours-row" data-day="5"><span>Friday</span><span>4:00 PM – 10:00 PM</span></div>
+        <div class="hours-row" data-day="6"><span>Saturday</span><span>4:00 PM – 10:00 PM</span></div>
+        <div class="hours-row shut" data-day="0"><span>Sunday</span><span>Closed</span></div>
+        <div class="warn">Hours follow recent directory listings (including one published in December 2025). A few aggregators show slightly different weekend hours. Please call if you’re coming late.</div>
+        <p><strong>5902 SE 72nd Ave</strong><br>Portland, OR 97206</p>
+        
+        <div class="hero-actions">
+          <a class="btn" href="tel:+15037711983">Call (503) 771-1983</a>
+          <a class="btn light" href="https://maps.google.com/?q=5902+SE+72nd+Ave+Portland+OR+97206" target="_blank" rel="noreferrer">Directions</a>
+          <a class="btn light" href="https://www.instagram.com/hometownpizzapdx/" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+      </div>
+      <div class="panel map">
+        <iframe title="Map of Hometown Pizza PDX" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=5902+SE+72nd+Ave,+Portland,+OR+97206&amp;output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">From public reviews</p>
+        <h2>Loved by locals.</h2>
+        <p>These are themes from public reviews, not invented personal quotes.</p>
+      </div>
+      <div class="reviews">
+        <article class="review"><p>Loved as a relaxed neighborhood pizza stop for takeaway and a direct phone order.</p><span>Theme from public directory reviews</span></article>
+        <article class="review"><p>People come for specialty pies and simple sides rather than a formal dining room.</p><span>Theme from listings</span></article>
+        <article class="review"><p>Sunday and Monday closures are easy to miss when the only official pages are social.</p><span>Practical note from published hours</span></article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="cta-band">
+        <h2>Call for a pie tonight.</h2>
+        <p>This is a demo concept, not the official site. If it’s useful, it can be adjusted and published for real.</p>
+        <div class="hero-actions">
+          <a class="btn ghost" href="tel:+15037711983">Call the shop</a>
+          <a class="btn ghost" href="https://www.instagram.com/hometownpizzapdx/" target="_blank" rel="noreferrer">Instagram</a>
+          <a class="btn ghost" href="https://www.facebook.com/p/Hometown-Pizza-PDX-100089482282689/" target="_blank" rel="noreferrer">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p>Hometown Pizza PDX · 5902 SE 72nd Ave, Portland, OR 97206 · (503) 771-1983</p>
+      <p class="note">Demo concept by Ikram Ullah — not an official site. Atmosphere photos are licensed stock from Unsplash, not the business’s own photography. Hours, menus, and prices were taken from public listings and may change.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

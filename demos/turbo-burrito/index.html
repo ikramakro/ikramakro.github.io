@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Turbo Burrito — Broughton Street, Edinburgh</title>
+  <meta name="description" content="Demo concept site for Turbo Burrito at 43 Broughton Street, Edinburgh. Not an official site.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;600&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="logo" href="#top">Turbo Burrito<span>Broughton Street · Edinburgh</span></a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <nav id="nav-links" class="nav-links">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#hours">Hours</a>
+        <a href="#reviews">Reviews</a>
+        <a class="btn" href="https://wa.me/447899231998">WhatsApp 07899 231998</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="wrap hero-inner">
+      <p class="kicker">43 Broughton Street · open late</p>
+      <h1>Late-night burritos, without giving every order to an app.</h1>
+      <p>A Broughton Street kitchen that’s already on Deliveroo and Uber Eats. This demo is an owned menu page, the late hours, and a mobile number you can WhatsApp.</p>
+      <div class="hero-actions">
+        <a class="btn" href="https://wa.me/447899231998" target="_blank" rel="noreferrer">WhatsApp 07899 231998</a>
+          <a class="btn ghost" href="tel:+447899231998">Call</a>
+      </div>
+      <div class="pills">
+        <span class="pill">InTravel: 4.5 from 115 Google reviews</span>
+        <span class="pill">Open late, every day</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap grid-2">
+      <div>
+        <p class="eyebrow">Broughton Street</p>
+        <div class="section-head">
+          <h2>Already selling late. Still without a homepage.</h2>
+          <p>Turbo Burrito is at 43 Broughton Street, Edinburgh EH1 3JU. Search finds Instagram, Deliveroo, and Uber Eats, not an official website. A public mobile number is listed on InTravel. An owned menu page would let late-night customers order or collect without starting in a delivery app.</p>
+        </div>
+      </div>
+      <div class="photo">
+        <img src="https://images.unsplash.com/photo-1566740933430-b5e70b06d2d5?auto=format&fit=crop&w=1400&q=80" alt="A burrito on a tray, used as decorative atmosphere photography" width="900" height="700">
+      </div>
+    </div>
+  </section>
+
+  <section id="menu">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">From public menus</p>
+        <h2>Burritos, tacos, and late plates.</h2>
+        <p>Public menus list burritos, tacos, quesadillas, fajitas, nachos, fries, burgers, and milkshakes. Delivery-app prices change often, so they are not copied here as a current price list.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><p class="eyebrow" style="margin:0 0 .25rem">Core</p><h3>Burritos &amp; tacos</h3><p>The name on the door, and the core of public menus.</p></article>
+        <article class="card"><p class="eyebrow" style="margin:0 0 .25rem">More</p><h3>Quesadillas, fajitas, nachos</h3><p>Plus fries, burgers, and milkshakes on aggregator menus.</p></article>
+        <article class="card"><p class="eyebrow" style="margin:0 0 .25rem">Late</p><h3>Open after midnight</h3><p>Listings show a 2:00 AM close most nights, and 3:00 AM on Friday and Saturday.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="hours">
+    <div class="wrap hours-grid">
+      <div class="panel">
+        <p class="eyebrow">Visit</p>
+        <h2 style="font-family:var(--display),serif;font-size:2rem;font-weight:500;margin:.2rem 0 1rem">Hours &amp; address</h2>
+        <div class="hours-row" data-day="1"><span>Monday</span><span>11:00 AM – 2:00 AM</span></div>
+        <div class="hours-row" data-day="2"><span>Tuesday</span><span>11:00 AM – 2:00 AM</span></div>
+        <div class="hours-row" data-day="3"><span>Wednesday</span><span>11:00 AM – 2:00 AM</span></div>
+        <div class="hours-row" data-day="4"><span>Thursday</span><span>11:00 AM – 2:00 AM</span></div>
+        <div class="hours-row" data-day="5"><span>Friday</span><span>11:00 AM – 3:00 AM</span></div>
+        <div class="hours-row" data-day="6"><span>Saturday</span><span>11:00 AM – 3:00 AM</span></div>
+        <div class="hours-row" data-day="0"><span>Sunday</span><span>11:00 AM – 2:00 AM</span></div>
+        <div class="warn">Hours follow public directory listings (Monday–Thursday and Sunday 11:00–02:00; Friday–Saturday 11:00–03:00) and may change. Please message or call if you’re coming very late.</div>
+        <p><strong>43 Broughton Street</strong><br>Edinburgh EH1 3JU</p>
+        
+        <div class="hero-actions">
+          <a class="btn" href="tel:+447899231998">Call 07899 231998</a>
+          <a class="btn light" href="https://wa.me/447899231998" target="_blank" rel="noreferrer">WhatsApp</a>
+          <a class="btn light" href="https://www.instagram.com/TurboBurrito.edinburgh/" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+      </div>
+      <div class="panel map">
+        <iframe title="Map of Turbo Burrito" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=43+Broughton+Street,+Edinburgh+EH1+3JU&amp;output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">From public reviews</p>
+        <h2>Loved by locals.</h2>
+        <p>These are themes from public reviews, not invented personal quotes.</p>
+      </div>
+      <div class="reviews">
+        <article class="review"><p>A late-night Broughton Street option, with a solid public Google rating.</p><span>Theme from InTravel and listings</span></article>
+        <article class="review"><p>People look for burritos and tacos after the pubs, often through a delivery app.</p><span>Theme from public channels</span></article>
+        <article class="review"><p>An owned menu and a WhatsApp number would keep more of those late orders direct.</p><span>Practical note</span></article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="cta-band">
+        <h2>Hungry after eleven? Message the kitchen.</h2>
+        <p>This is a demo concept, not the official site.</p>
+        <div class="hero-actions">
+          <a class="btn ghost" href="https://wa.me/447899231998" target="_blank" rel="noreferrer">WhatsApp</a>
+          <a class="btn ghost" href="https://www.instagram.com/TurboBurrito.edinburgh/" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p>Turbo Burrito · 43 Broughton Street, Edinburgh EH1 3JU · 07899 231998</p>
+      <p class="note">Demo concept by Ikram Ullah — not an official site. Atmosphere photos are licensed stock from Unsplash, not the business’s own photography. Hours, menus, and prices were taken from public listings and may change.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
