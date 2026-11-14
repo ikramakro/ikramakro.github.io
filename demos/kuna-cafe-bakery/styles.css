@@ -1,0 +1,71 @@
+/* Kuna Cafe & Bakery — demo concept */
+:root{
+  --paper:#f4ead8;
+  --foam:#fbf6ec;
+  --ink:#2a2118;
+  --muted:#6a5748;
+  --cocoa:#5c2e1f;
+  --terra:#c07850;
+  --flour:#efe2cb;
+  --line:rgba(42,33,24,.12);
+  --shadow:0 22px 50px rgba(92,46,31,.12);
+  --max:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Nunito Sans",system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(var(--max),calc(100% - 2.2rem));margin-inline:auto}
+.nav{position:sticky;top:0;z-index:40;background:rgba(244,234,216,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:.85rem 0;gap:1rem}
+.logo{text-decoration:none;font-family:"Instrument Serif",Georgia,serif;font-size:1.55rem}
+.logo span{display:block;font-family:"Nunito Sans",sans-serif;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cocoa)}
+.nav-links{display:flex;gap:1.2rem;align-items:center}
+.nav-links a{text-decoration:none;color:var(--muted)}
+.nav-links a:hover{color:var(--cocoa)}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--cocoa);color:#fff;text-decoration:none;padding:.75rem 1.2rem;border-radius:999px;font-weight:700;border:0;cursor:pointer}
+.btn:hover{background:#431f14}
+.btn.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.55)}
+.btn.light{background:var(--foam);color:var(--cocoa);border:1px solid var(--line)}
+.menu-btn{display:none;background:none;border:0;font:inherit;color:var(--cocoa);cursor:pointer}
+.hero{position:relative;min-height:88vh;display:grid;align-items:end;color:#fff;background:#3a2418 url("https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1800&q=80") center/cover no-repeat}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(42,33,24,.2),rgba(42,33,24,.78))}
+.hero-inner{position:relative;padding:7rem 0 3.6rem}
+.kicker{letter-spacing:.2em;text-transform:uppercase;font-size:.74rem;color:#f0d4b0}
+.hero h1{font-family:"Instrument Serif",Georgia,serif;font-size:clamp(3rem,8vw,6.2rem);line-height:.95;margin:.3rem 0 1rem;font-weight:400}
+.hero p{max-width:34rem;font-size:1.1rem}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.4rem}
+.closed{display:inline-block;background:var(--terra);color:#fff;padding:.3rem .7rem;border-radius:999px;font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:.8rem}
+section{padding:5rem 0}
+.section-head{max-width:38rem;margin-bottom:2rem}
+.section-head h2{font-family:"Instrument Serif",serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:400;line-height:1.12;margin:.25rem 0 .6rem}
+.eyebrow{color:var(--cocoa);letter-spacing:.16em;text-transform:uppercase;font-size:.72rem;font-weight:800}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center}
+.photo{border-radius:8px 40px 8px 40px;overflow:hidden;box-shadow:var(--shadow);min-height:340px}
+.photo img{width:100%;height:100%;object-fit:cover;min-height:340px}
+.case{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.pastry{background:var(--foam);border:1px solid var(--line);padding:1.2rem;border-radius:4px 24px}
+.pastry h3{font-family:"Instrument Serif",serif;font-size:1.45rem;margin:.2rem 0 .4rem;font-weight:400}
+.pastry p{margin:0;color:var(--muted)}
+.hours-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+.panel{background:var(--foam);border:1px solid var(--line);padding:1.5rem;border-radius:8px;overflow:hidden}
+.hours-row{display:flex;justify-content:space-between;padding:.5rem 0;border-bottom:1px solid var(--line)}
+.hours-row.today{font-weight:800;color:var(--cocoa)}
+.hours-row.shut{color:#9a4a32}
+.warn{background:#f8e4c8;padding:.85rem 1rem;margin:1rem 0;font-size:.92rem;border-radius:8px}
+.map iframe{width:100%;height:100%;min-height:360px;border:0;display:block}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.review{background:var(--cocoa);color:#fff;padding:1.5rem;border-radius:4px 28px 4px 28px}
+.review p{font-family:"Instrument Serif",serif;font-size:1.3rem;line-height:1.35;margin:0 0 .8rem}
+.cta-band{background:var(--flour);border:1px solid var(--line);border-radius:20px;padding:3rem 2rem;text-align:center}
+.cta-band h2{font-family:"Instrument Serif",serif;font-size:clamp(2rem,4vw,3rem);margin:0 0 .6rem;font-weight:400}
+.cta-band .hero-actions{justify-content:center}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.85rem}
+footer .note{font-style:italic}
+@media (max-width:860px){
+  .menu-btn{display:block}
+  .nav-links{display:none;position:absolute;inset:64px 1rem auto;background:var(--foam);border:1px solid var(--line);border-radius:16px;padding:1rem;flex-direction:column;align-items:stretch}
+  .nav-links.open{display:flex}
+  .grid-2,.case,.reviews,.hours-grid{grid-template-columns:1fr}
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kuna Cafe &amp; Bakery — Elm Row, Edinburgh</title>
+  <meta name="description" content="Demo concept site for Kuna Cafe & Bakery on Elm Row, Edinburgh. Sourdough, pastries, and coffee. Closed Tuesdays. Not an official site.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="logo" href="#top">Kuna<span>Cafe &amp; Bakery · Edinburgh</span></a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <nav id="nav-links" class="nav-links">
+        <a href="#about">About</a>
+        <a href="#case">The case</a>
+        <a href="#hours">Hours</a>
+        <a href="#reviews">Reviews</a>
+        <a class="btn" href="https://www.instagram.com/kunacafe/" target="_blank" rel="noreferrer">Instagram</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="wrap hero-inner">
+      <p class="closed">Closed Tuesdays</p>
+      <p class="kicker">1 Elm Row · Edinburgh</p>
+      <h1>Pastries made from scratch on a little corner of Elm Row.</h1>
+      <p>Sourdough, cinnamon buns, toasties, and careful coffee in a cozy old building. Counter service, dogs welcome — and it can get busy in summer, so come a little earlier.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#hours">Hours &amp; directions</a>
+        <a class="btn ghost" href="https://www.instagram.com/kunacafe/" target="_blank" rel="noreferrer">See today’s case</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap grid-2">
+      <div>
+        <p class="eyebrow">Artisan bakery-cafe</p>
+        <div class="section-head">
+          <h2>A small shop that’s easier to find when the hours are clear.</h2>
+          <p>Kuna is a compact bakery-cafe on Elm Row, loved for pastries made from scratch and a friendly counter. There is no booking — just walk in. Indoor and outdoor seats are available, and dogs are welcome. Public listings show a 4.8 rating from about 367 Google reviews, including reviews from 2026.</p>
+        </div>
+      </div>
+      <div class="photo">
+        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="Loaves of bread on a wooden table, used as decorative atmosphere photography" width="900" height="700">
+      </div>
+    </div>
+  </section>
+
+  <section id="case">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">From the pastry case</p>
+        <h2>Bakes and plates people look for.</h2>
+        <p>What’s out changes with the day and season. The items below appear in public write-ups and listings. We haven’t listed prices here, because public figures are mixed and can change.</p>
+      </div>
+      <div class="case">
+        <article class="pastry"><h3>Sourdough &amp; focaccia</h3><p>Daily loaves and focaccia from the bakery side of the shop.</p></article>
+        <article class="pastry"><h3>Croissants &amp; buns</h3><p>Croissants, cinnamon buns, and occasional hot-cross cinnamon buns.</p></article>
+        <article class="pastry"><h3>Seasonal pastries</h3><p>The case turns with the season — Instagram is the best look at what’s out today.</p></article>
+        <article class="pastry"><h3>Scones, pies &amp; toasties</h3><p>Sweet and savoury scones, homemade pies, and toasted sandwiches.</p></article>
+        <article class="pastry"><h3>Breakfast plates</h3><p>Granola, smoked salmon with dill cream cheese, and a savoury egg tart with prosciutto and onion marmalade have all been listed.</p></article>
+        <article class="pastry"><h3>Cake &amp; coffee</h3><p>Earl Grey, lemon, or honey cake, plus espresso drinks and chai lattes.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="hours">
+    <div class="wrap hours-grid">
+      <div class="panel">
+        <p class="eyebrow">Find the shop</p>
+        <h2 style="font-family:'Instrument Serif',serif;font-size:2.2rem;font-weight:400;margin:.2rem 0 1rem">Hours &amp; address</h2>
+        <div class="hours-row" data-day="1"><span>Monday</span><span>8:30 – 16:30</span></div>
+        <div class="hours-row shut" data-day="2"><span>Tuesday</span><span>Closed</span></div>
+        <div class="hours-row" data-day="3"><span>Wednesday</span><span>8:30 – 16:30</span></div>
+        <div class="hours-row" data-day="4"><span>Thursday</span><span>8:30 – 16:30</span></div>
+        <div class="hours-row" data-day="5"><span>Friday</span><span>8:30 – 16:30</span></div>
+        <div class="hours-row" data-day="6"><span>Saturday</span><span>8:30 – 16:30</span></div>
+        <div class="hours-row" data-day="0"><span>Sunday</span><span>8:30 – 16:30</span></div>
+        <div class="warn">Closed every Tuesday. No reservations — counter service only. The shop can be busy in summer; coming earlier usually helps. Hours may change, so check Instagram if you’re making a special trip.</div>
+        <p><strong>1 Elm Row</strong><br>Edinburgh EH7 4AA</p>
+        <p style="color:var(--muted);font-size:.92rem">We couldn’t find a public phone number for the cafe, so Instagram is the published way to get in touch.</p>
+        <div class="hero-actions">
+          <a class="btn" href="https://www.instagram.com/kunacafe/" target="_blank" rel="noreferrer">Instagram @kunacafe</a>
+          <a class="btn light" href="https://maps.google.com/?q=1+Elm+Row+Edinburgh+EH7+4AA" target="_blank" rel="noreferrer">Directions</a>
+        </div>
+      </div>
+      <div class="panel map">
+        <iframe title="Map of Kuna Cafe and Bakery in Edinburgh" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=1+Elm+Row,+Edinburgh+EH7+4AA&amp;output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">From public reviews</p>
+        <h2>Loved by locals for scratch-made pastry and a cozy room.</h2>
+        <p>These are themes from public reviews, not invented personal quotes.</p>
+      </div>
+      <div class="reviews">
+        <article class="review"><p>Praised for pastries made from scratch, good coffee, and a friendly counter in an old building.</p><span>Theme from Google and TripAdvisor reviews</span></article>
+        <article class="review"><p>A compact room with indoor and outdoor seats, and dogs welcome.</p><span>Theme from listings</span></article>
+        <article class="review"><p>A few notes mention small salad portions and a plant-milk surcharge.</p><span>Recurring practical note</span></article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="cta-band">
+        <h2>Come for the cinnamon buns. Just not on Tuesday.</h2>
+        <p>Follow @kunacafe for what’s in the case today. This page is a demo concept, not the official site.</p>
+        <div class="hero-actions">
+          <a class="btn" href="https://www.instagram.com/kunacafe/" target="_blank" rel="noreferrer">Message on Instagram</a>
+          <a class="btn light" href="https://maps.google.com/?q=1+Elm+Row+Edinburgh+EH7+4AA" target="_blank" rel="noreferrer">Get directions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p>Kuna Cafe &amp; Bakery · 1 Elm Row, Edinburgh EH7 4AA · Instagram @kunacafe</p>
+      <p class="note">Demo concept by Ikram Ullah — not an official site. Atmosphere photos are licensed stock from Unsplash, not the bakery’s own photography. Hours and offerings were taken from public listings and may change.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
